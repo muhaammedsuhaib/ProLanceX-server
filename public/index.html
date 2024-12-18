@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProLanceX</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white font-sans">
+  <div class="flex flex-col items-center justify-center min-h-screen">
+    <main class="flex-1 flex flex-col items-center justify-center px-4 text-center">
+      <h2 class="text-5xl font-bold mb-6">ProLanceX</h2>
+      <p class="text-lg mb-8 text-gray-300">
+        We’re working hard to launch our platform. Stay tuned for updates!
+      </p>
+      <!-- Spinner (can use Tailwind's built-in spin animation) -->
+      <div class="animate-spin text-blue-500 text-4xl mb-6">↻</div>
+    </main>
+
+    <footer class="w-full py-6 bg-black">
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="https://www.facebook.com/muhaammedsuhaib" target="_blank"
+          class="text-blue-500 hover:text-blue-400 transition-all">
+          <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook"
+            class="w-8 h-8 object-contain" />
+        </a>
+        <a href="https://x.com/MuhaammedSuhaib" target="_blank"
+          class="text-blue-500 hover:text-blue-400 transition-all">
+          <img src="https://www.aps.edu/sapr/images/pnglot.comtwitterbirdlogopng139932.png/image_preview" alt="Twitter"
+            class="w-8 h-8 object-contain" />
+        </a>
+        <a href="https://www.instagram.com/suhaii.bb" target="_blank"
+          class="text-blue-500 hover:text-blue-400 transition-all relative bottom-1">
+          <img src="https://jozupost-res.cloudinary.com/image/upload/v1596654629/JPApp_Social_Instagram_x9ywrd.png"
+            alt="Instagram" class="w-10 h-10 object-contain" />
+        </a>
+      </div>
+      <p class="text-center text-sm text-gray-400">
+        &copy; <span id="year"></span> ProLanceX. All rights reserved.
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
